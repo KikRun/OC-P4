@@ -48,15 +48,18 @@ body {
 .explorer {
   display: flex;
   flex-direction: column;
+  padding: 40px 60px 57px;
   align-items: center;
   text-align: center;
   background-color: var(--light-grey);
 }
-.explorer .explorer h1 {
+.explorer .explorer_title {
   font-size: 24px;
-  max-height: 68;
+  max-height: 68px;
+  margin-bottom: 0px;
 }
-.explorer .explorer p {
+.explorer .explorer__text {
+  max-height: 46px;
   font-size: 18px;
   font-weight: 300;
 }
@@ -71,6 +74,9 @@ body {
   font-size: 16px;
   color: white;
   border: 0;
+}
+.explorer .explorer__button--a {
+  margin-top: 50px;
 }
 
 /* FONCTIONNEMENT */
