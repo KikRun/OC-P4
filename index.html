@@ -17,23 +17,25 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./SASS/index.css" />
   </head>
 </html>
 
 <body>
-  <header>
-    <img src="./assets/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" />
+  <header class="header">
+    <nav class="header__navigation">
+      <img class="header__logo" src="./assets/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" />
+      <div class="header__location">
+        <i class="fa-solid fa-location-dot"></i>
+        <h4>Paris, Belleville</h4>
+      </div>
+    </nav>
   </header>
-  <main>
-    <section class="maposition">
-      <i class="fa-solid fa-location-dot"></i>
-      <h5>Paris, Belleville</h5>
-    </section>
 
+  <main>
     <section class="explorer">
       <h1>Réservez le menu qui vous convient</h1>
-      <p>découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+      <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
       <a href="#">
         <button class="explorer__button">
           <h4>Explorer nos restaurants</h4>

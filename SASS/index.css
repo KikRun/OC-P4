@@ -1,0 +1,40 @@
+* {
+  border: solid 1px red;
+}
+
+:root {
+  --main-color: #9356DC;
+  --grey: #EAEAEA;
+  --light-grey: #F6F6F6;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto;
+}
+
+.header {
+  max-height: 113px;
+}
+.header .header__navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.header .header__logo {
+  width: 197px;
+  height: 36px;
+  margin: 14px 89px 13px;
+}
+.header .header__location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: var(--grey);
+  gap: 17px;
+}/*# sourceMappingURL=index.css.map */
