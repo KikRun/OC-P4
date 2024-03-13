@@ -1,12 +1,15 @@
 *{
     border: solid 1px red;
+    text-decoration: none;
 }
 
 :root{
     --main-color: #9356DC;
     --second-color: #FF79DA;
+    --third-color: #99E2D0;
     --grey: #EAEAEA;
     --light-grey: #f3f3f3;
+    --darker-green: #008766;
 }
 
 @mixin shadow{
@@ -64,12 +67,12 @@ body{
 
     .explorer_title{
         font-size: 24px;
-        max-height: 68px;
+        min-height: 34px;
         margin-bottom: 0px;
     }
 
     .explorer__text{
-        max-height: 46px;
+        min-height: 46px;
         font-size: 18px;
         font-weight: 300;
     }
@@ -121,5 +124,77 @@ body{
         font-size: 14px;
         color: white;
         margin-left: -12px;
+    }
+}
+
+/* RESTAURANTS */
+
+.restaurants{
+    padding: 0px 20px 66px ;
+    background-color: var(--light-grey);
+
+    .restaurants__card{
+        display: flex;
+        flex-direction: column;
+        height: 240px;
+        background-color: white;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+
+    .restaurants__image{
+        height: 170px;
+        width: 100%;
+        border-radius: 15px 15px 0px 0px;
+        object-fit: cover;
+    }
+
+    .restaurants__image_container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .restaurants__nouveau{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--third-color);
+        color: var(--darker-green);
+        font-size: 14px;
+        margin: 15px 0px 0px -95px;
+        height: 29px;
+        width: 80px;
+    }
+
+    .restaurants__text{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .restaurants__text h3,
+    .restaurants__text p{
+        margin: 0;
+        color: black;
+    }
+
+    .restaurants__card_bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .restaurants__card_bottom i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+    }
+
+    .restaurants__favori{
+        color: var(--main-color);
     }
 }
