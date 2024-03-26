@@ -32,8 +32,7 @@ body {
 }
 .header .header__navigation {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
   width: 100%;
 }
@@ -41,6 +40,7 @@ body {
   width: 197px;
   height: 36px;
   margin: 14px 89px 13px;
+  justify-content: center;
 }
 .header .header__location {
   display: flex;
@@ -204,4 +204,4 @@ body {
 .footer .footer__link i {
   width: 13px;
   padding-right: 15px;
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=Restos.css.map */

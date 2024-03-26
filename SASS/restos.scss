@@ -36,16 +36,22 @@ body{
 
     .header__navigation{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
         align-items: center;
         width: 100%;
+    }
+
+    .header__navigation i{
+        font-size: 200px;
+        font-weight: 800;
     }
 
     .header__logo{
         width: 197px;
         height: 36px;
         margin: 14px 89px 13px;
+        justify-content: center;
+        position: ;
     }
 
     .header__location{
