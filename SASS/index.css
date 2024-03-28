@@ -1,8 +1,7 @@
 /* GENERAL */
 * {
   border: solid 1px red;
-  -webkit-text-decoration: one;
-          text-decoration: one;
+  text-decoration: none;
 }
 
 :root {
@@ -157,6 +156,11 @@ body {
   height: 29px;
   width: 80px;
 }
+.restaurants .restaurants__card_bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .restaurants .restaurants__text {
   display: flex;
   flex-direction: column;
@@ -167,9 +171,17 @@ body {
   margin: 0;
   color: black;
 }
+.restaurants .restaurants__hearts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  padding-right: 25px;
+}
 .restaurants .restaurants__favori {
   opacity: 0;
-  color: var(--main-color);
+  color: var(white);
+  margin-left: -21px;
   transition: opacity 1s;
 }
 .restaurants .restaurants__favori:hover {

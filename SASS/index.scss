@@ -2,7 +2,7 @@
 
 *{
     border: solid 1px red;
-    text-decoration: one;
+    text-decoration: none;
 }
 
 :root{
@@ -180,6 +180,13 @@ body{
         width: 80px;
     }
 
+    .restaurants__card_bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
     .restaurants__text{
         display: flex;
         flex-direction: column;
@@ -192,10 +199,19 @@ body{
         color: black;
     }
 
+    .restaurants__hearts{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 21px;
+        padding-right: 25px;
+    }
+
 
     .restaurants__favori{
         opacity: 0;
-        color: var(--main-color);
+        color: var(white);
+        margin-left: -21px;
 
         transition: opacity 1s;
         &:hover{
