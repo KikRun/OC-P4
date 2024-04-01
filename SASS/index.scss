@@ -207,15 +207,26 @@ body{
         padding-right: 25px;
     }
 
+    .restaurants__heart{
+        color: black;
+        opacity: 1;
+        transition: opacity 0.2s;
+        &:hover{
+            opacity: 0;
+        }
+    }
+
 
     .restaurants__favori{
         opacity: 0;
-        color: var(white);
-        margin-left: -21px;
+        margin-left: -21.00px;
 
-        transition: opacity 1s;
+        transition: opacity 0.2s;
         &:hover{
             opacity: 1;
+            background: -webkit-linear-gradient(var(--main-color), var(--second-color));
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
 }

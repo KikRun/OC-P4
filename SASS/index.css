@@ -178,14 +178,25 @@ body {
   font-size: 21px;
   padding-right: 25px;
 }
+.restaurants .restaurants__heart {
+  color: black;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+.restaurants .restaurants__heart:hover {
+  opacity: 0;
+}
 .restaurants .restaurants__favori {
   opacity: 0;
-  color: var(white);
   margin-left: -21px;
-  transition: opacity 1s;
+  transition: opacity 0.2s;
 }
 .restaurants .restaurants__favori:hover {
   opacity: 1;
+  background: -webkit-linear-gradient(var(--main-color), var(--second-color));
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* FOOTER */
