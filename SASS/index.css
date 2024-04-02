@@ -5,18 +5,13 @@
 }
 
 :root {
-  --main-color: #9356DC;
-  --second-color: #FF79DA;
-  --third-color: #99E2D0;
-  --grey: #EAEAEA;
+  --main-color: #9356dc;
+  --second-color: #ff79da;
+  --third-color: #99e2d0;
+  --grey: #eaeaea;
   --light-grey: #f3f3f3;
   --darker-green: #008766;
   --footer-background: #353535;
-}
-
-html {
-  padding: 0;
-  margin: 0;
 }
 
 body {
@@ -87,10 +82,11 @@ body {
   font-size: 16px;
   font-weight: 500;
   border: 0;
+  transition: all 1s;
 }
 .explorer .explorer__button:hover {
   opacity: 0.85;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3764705882);
 }
 
 /* FONCTIONNEMENT */
@@ -123,7 +119,7 @@ body {
 
 /* RESTAURANTS */
 .restaurants {
-  padding: 0px 20px 66px;
+  padding: 10px 20px 66px;
   background-color: var(--light-grey);
 }
 .restaurants .restaurants__card {
