@@ -60,7 +60,7 @@ body {
   .header__navigation i {
     font-size: 24px;
     padding: 20px;
-    margin-right: -61px;
+    margin-right: -62px;
     align-items: flex-start;
     color: black;
   }
@@ -109,6 +109,7 @@ body {
     display: flex;
     object-fit: contain;
     flex-direction: column;
+<<<<<<< HEAD
     padding: 0px 20px;
 
     animation: menu_type 1s ease-in-out;
@@ -118,6 +119,9 @@ body {
     &--3 {
       animation: menu_type 2s ease-in-out;
     }
+=======
+    padding: 20px;
+>>>>>>> parent of 07078ea (Major - Finission + ajout du boutton commander sur la page resto template)
   }
 
   .menu__type h3 {
@@ -141,7 +145,6 @@ body {
     background-color: white;
     border-radius: 15px;
     padding: 15px 13.5px 13.5px;
-    margin-bottom: 12px;
     overflow: hidden;
 
     @include shadow;
@@ -218,14 +221,7 @@ body {
     transform: translateX(100%);
   }
 
-  .menu__commande {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0 30px;
-  }
-
-  .menu__button {
+  .menu__commander {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -238,12 +234,15 @@ body {
     font-size: 16px;
     font-weight: 500;
     border: 0;
+<<<<<<< HEAD
 
     transition: all 0.3s ease-in-out;
     &:hover {
       opacity: 0.85;
       box-shadow: 0px 4px 4px 0px #00000060;
     }
+=======
+>>>>>>> parent of 07078ea (Major - Finission + ajout du boutton commander sur la page resto template)
   }
 }
 
