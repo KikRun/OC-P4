@@ -119,6 +119,10 @@ body {
     font-size: 16px;
 
     @include shadow;
+
+    &--purple i {
+      color: var(--main-color);
+    }
   }
 
   .fonctionnement__card h3 {
