@@ -107,9 +107,12 @@ body {
 }
 .menu .menu__type--3 {
   animation: menu_type 2s ease-in-out;
+<<<<<<< HEAD
 =======
   padding: 20px;
 >>>>>>> parent of 07078ea (Major - Finission + ajout du boutton commander sur la page resto template)
+=======
+>>>>>>> cdde03e5281ede6e81aa97e4efbb9ff7a02d1fd8
 }
 .menu .menu__type h3 {
   font-size: 16px;
@@ -206,6 +209,9 @@ body {
   font-weight: 500;
   border: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> cdde03e5281ede6e81aa97e4efbb9ff7a02d1fd8
   transition: all 0.3s ease-in-out;
 }
 .menu .menu__button:hover {
