@@ -1,6 +1,6 @@
 /* GENERAL */
 * {
-  border: solid 1px red;
+  /* border: solid 1px red; */
   text-decoration: none;
 }
 
@@ -18,8 +18,68 @@ body {
   padding: 0;
   margin: 0;
   font-family: Roboto;
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+}
+@media only screen and (min-width: 767.99px) and (max-width: 1199.97px) {
+  body {
+    background-color: red;
+  }
 }
 
+/* LOADER */
+.loader {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  font-family: shrikhand;
+  font-size: 50px;
+  opacity: 0;
+  animation: loader 2.5s;
+  animation-iteration-count: 1;
+}
+.loader .loader__text {
+  animation: loader-text 2.5s;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loader-text {
+  0% {
+    opacity: 1;
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  75% {
+    transform: scale(0.9, 0.9);
+  }
+  95% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /* HEADER */
 .header {
   max-height: 113px;
