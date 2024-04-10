@@ -24,10 +24,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: Roboto;
-
-  @include responsive("tablet") {
-    background-color: red;
-  }
 }
 
 /* LOADER */
@@ -170,10 +166,24 @@ $loader-timing: 2.5s;
   }
 }
 
-/* FONCTIONNEMENT */
+/* FONCTIONNEMENT  1024px */
 
 .fonctionnement {
-  margin: 0px 20px;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  @include responsive("tablet") {
+    margin: 0px 10%;
+  }
+
+  .fonctionnement__cards {
+    @include responsive("tablet") {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 5px;
+    }
+  }
 
   .fonctionnement__card {
     display: flex;
@@ -184,8 +194,9 @@ $loader-timing: 2.5s;
     margin: 25px 12px;
     gap: 20px;
     font-size: 16px;
-
-    @include shadow;
+    @include responsive("tablet") {
+      width: 30%;
+    }
 
     &--purple i {
       color: var(--main-color);
@@ -212,6 +223,23 @@ $loader-timing: 2.5s;
   padding: 10px 20px 66px;
   background-color: var(--light-grey);
 
+  h2 {
+    @include responsive("tablet") {
+      margin: 20px 9%;
+    }
+  }
+
+  .restaurants__cards {
+    @include responsive("tablet") {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 10%;
+      margin: 0 9%;
+    }
+  }
+
   .restaurants__card {
     display: flex;
     flex-direction: column;
@@ -219,6 +247,9 @@ $loader-timing: 2.5s;
     background-color: white;
     border-radius: 15px;
     margin-bottom: 20px;
+    @include responsive("tablet") {
+      width: 45%;
+    }
   }
 
   .restaurants__image {
@@ -300,9 +331,14 @@ $loader-timing: 2.5s;
   display: flex;
   flex-direction: column;
   background-color: var(--footer-background);
-
   margin: 0;
   padding: 0;
+  @include responsive("tablet") {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    height: 114px;
+    padding: 10px;
+  }
 
   .footer__logo {
     color: white;
@@ -317,6 +353,10 @@ $loader-timing: 2.5s;
     flex-direction: column;
     gap: 7px;
     padding: 0px 20px 20px;
+    @include responsive("tablet") {
+      flex-direction: row;
+      gap: 20px;
+    }
   }
 
   .footer__link a {

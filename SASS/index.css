@@ -18,17 +18,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: Roboto;
-  /*
-        breakpoints are viewport arbitrary values,
-        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
-        the breakpoints I used were inspired by Bootstrap =>
-        https://getbootstrap.com/docs/5.0/layout/breakpoints/
-    */
-}
-@media only screen and (min-width: 767.99px) and (max-width: 1199.97px) {
-  body {
-    background-color: red;
-  }
 }
 
 /* LOADER */
@@ -149,9 +138,38 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3764705882);
 }
 
-/* FONCTIONNEMENT */
+/* FONCTIONNEMENT  1024px */
 .fonctionnement {
-  margin: 0px 20px;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+}
+@media only screen and (min-width: 768px) {
+  .fonctionnement {
+    margin: 0px 10%;
+  }
+}
+.fonctionnement .fonctionnement__cards {
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+}
+@media only screen and (min-width: 768px) {
+  .fonctionnement .fonctionnement__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+  }
 }
 .fonctionnement .fonctionnement__card {
   display: flex;
@@ -162,7 +180,17 @@ body {
   margin: 25px 12px;
   gap: 20px;
   font-size: 16px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+}
+@media only screen and (min-width: 768px) {
+  .fonctionnement .fonctionnement__card {
+    width: 30%;
+  }
 }
 .fonctionnement .fonctionnement__card--purple i {
   color: var(--main-color);
@@ -185,6 +213,37 @@ body {
   padding: 10px 20px 66px;
   background-color: var(--light-grey);
 }
+.restaurants h2 {
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+}
+@media only screen and (min-width: 768px) {
+  .restaurants h2 {
+    margin: 20px 9%;
+  }
+}
+.restaurants .restaurants__cards {
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+}
+@media only screen and (min-width: 768px) {
+  .restaurants .restaurants__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 10%;
+    margin: 0 9%;
+  }
+}
 .restaurants .restaurants__card {
   display: flex;
   flex-direction: column;
@@ -192,6 +251,17 @@ body {
   background-color: white;
   border-radius: 15px;
   margin-bottom: 20px;
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+}
+@media only screen and (min-width: 768px) {
+  .restaurants .restaurants__card {
+    width: 45%;
+  }
 }
 .restaurants .restaurants__image {
   height: 170px;
@@ -265,6 +335,20 @@ body {
   background-color: var(--footer-background);
   margin: 0;
   padding: 0;
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+}
+@media only screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    height: 114px;
+    padding: 10px;
+  }
 }
 .footer .footer__logo {
   color: white;
@@ -278,6 +362,18 @@ body {
   flex-direction: column;
   gap: 7px;
   padding: 0px 20px 20px;
+  /*
+        breakpoints are viewport arbitrary values,
+        they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+        the breakpoints I used were inspired by Bootstrap =>
+        https://getbootstrap.com/docs/5.0/layout/breakpoints/
+    */
+}
+@media only screen and (min-width: 768px) {
+  .footer .footer__link {
+    flex-direction: row;
+    gap: 20px;
+  }
 }
 .footer .footer__link a {
   color: white;

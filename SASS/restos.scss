@@ -1,3 +1,4 @@
+@import "mixins/responsive";
 /* GENERAL */
 
 * {
@@ -17,6 +18,13 @@
 
 @mixin shadow {
   box-shadow: 0px 4px 15px 0px #00000040;
+}
+
+@mixin responsive-menu {
+  padding: auto;
+  min-width: 768px;
+  max-width: 1055px;
+  justify-content: center;
 }
 
 @keyframes menu_type {
@@ -78,7 +86,12 @@ body {
 /* MAIN */
 
 .menu {
-  background-color: var(--light-grey);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   .menu__image {
     height: 275px;
     width: 100%;
@@ -97,6 +110,9 @@ body {
     margin-top: -32px;
     padding: 0 20px;
     position: relative;
+    @include responsive("tablet") {
+      @include responsive-menu;
+    }
 
     .menu_header__heart {
       display: flex;
@@ -110,6 +126,10 @@ body {
     object-fit: contain;
     flex-direction: column;
     padding: 0px 20px;
+    background-color: var(--light-grey);
+    @include responsive("tablet") {
+      @include responsive-menu;
+    }
 
     animation: menu_type 1s ease-in-out;
     &--2 {
@@ -223,6 +243,11 @@ body {
     justify-content: center;
     align-items: center;
     padding: 15px 0 30px;
+    background-color: var(--light-grey);
+    @include responsive("tablet") {
+      @include responsive-menu;
+      padding: 15px 20px;
+    }
   }
 
   .menu__button {
@@ -255,6 +280,12 @@ body {
   background-color: var(--footer-background);
   margin: 0;
   padding: 0;
+  @include responsive("tablet") {
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    height: 114px;
+    padding: 10px;
+  }
 
   .footer__logo {
     color: white;
@@ -269,6 +300,10 @@ body {
     flex-direction: column;
     gap: 7px;
     padding: 0px 20px 20px;
+    @include responsive("tablet") {
+      flex-direction: row;
+      gap: 20px;
+    }
   }
 
   .footer__link a {
