@@ -31,7 +31,7 @@ body {
 $loader-timing: 2.5s;
 
 .loader {
-  display: flex;
+  display: none;
   position: fixed;
   justify-content: center;
   align-items: center;
@@ -52,9 +52,13 @@ $loader-timing: 2.5s;
 
 @keyframes loader {
   0% {
+    display: flex;
     opacity: 1;
   }
 
+  90% {
+    opacity: 1;
+  }
   95% {
     opacity: 0.9;
   }
@@ -194,6 +198,8 @@ $loader-timing: 2.5s;
     margin: 25px 12px;
     gap: 20px;
     font-size: 16px;
+
+    @include shadow();
     @include responsive("tablet") {
       width: 30%;
     }

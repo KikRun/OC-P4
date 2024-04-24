@@ -21,7 +21,6 @@
 }
 
 @mixin responsive-menu {
-  padding: auto;
   min-width: 768px;
   max-width: 1055px;
   justify-content: center;
@@ -91,11 +90,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 
   .menu__image {
     height: 275px;
     width: 100%;
     object-fit: cover;
+    margin: 0;
+    padding: 0;
   }
 
   .menu_header {
@@ -107,9 +109,13 @@ body {
     font-family: shrikhand;
     background-color: var(--light-grey);
     border-radius: 32px 32px 0 0;
-    margin-top: -32px;
+    margin-top: -40px;
     padding: 0 20px;
+    width: 90%;
     position: relative;
+    @include responsive("smartphone") {
+      padding: 0 15px;
+    }
     @include responsive("tablet") {
       @include responsive-menu;
     }
@@ -127,6 +133,10 @@ body {
     flex-direction: column;
     padding: 0px 20px;
     background-color: var(--light-grey);
+    width: 90%;
+    @include responsive("smartphone") {
+      padding: 0 15px;
+    }
     @include responsive("tablet") {
       @include responsive-menu;
     }
@@ -226,10 +236,11 @@ body {
     align-items: center;
     justify-content: center;
     border-radius: 0px 15px 15px 0;
-    margin-bottom: -14px;
+    margin-bottom: -15px;
     margin-left: 60px;
-    height: 101%;
-    width: 60px;
+
+    height: 102%;
+    width: 62px;
     font-size: 20px;
     background-color: var(--third-color);
     color: white;
@@ -242,11 +253,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 0 30px;
+    padding: 15px 20px 30px;
+    margin: 0;
     background-color: var(--light-grey);
+    width: 90%;
+
+    @include responsive("smartphone") {
+      padding: 15px 15px 30px;
+    }
     @include responsive("tablet") {
       @include responsive-menu;
-      padding: 15px 20px;
     }
   }
 
