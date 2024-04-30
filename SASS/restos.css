@@ -71,11 +71,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
 }
 .menu .menu__image {
   height: 275px;
   width: 100%;
+  padding: 0;
+  margin: 0;
   -o-object-fit: cover;
      object-fit: cover;
   /*
@@ -100,8 +101,8 @@ body {
   background-color: var(--light-grey);
   border-radius: 32px 32px 0 0;
   margin-top: -40px;
-  padding: 0 20px;
-  width: 93%;
+  padding: 0 4%;
+  width: 92%;
   position: relative;
   /*
         breakpoints are viewport arbitrary values,
@@ -118,7 +119,7 @@ body {
 }
 @media only screen and (max-width: 500px) {
   .menu .menu_header {
-    padding: 0 15px;
+    padding: 0 10px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -139,9 +140,9 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
   flex-direction: column;
-  padding: 0px 20px;
   background-color: var(--light-grey);
-  width: 93%;
+  padding: 0 4%;
+  width: 92%;
   /*
         breakpoints are viewport arbitrary values,
         they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
@@ -158,7 +159,7 @@ body {
 }
 @media only screen and (max-width: 500px) {
   .menu .menu__type {
-    padding: 0 15px;
+    padding: 0 10px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -260,10 +261,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 20px 30px;
   margin: 0;
   background-color: var(--light-grey);
-  width: 93%;
+  padding: 15px 4% 30px;
+  width: 92%;
   /*
         breakpoints are viewport arbitrary values,
         they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
@@ -279,7 +280,7 @@ body {
 }
 @media only screen and (max-width: 500px) {
   .menu .menu__commande {
-    padding: 15px 15px 30px;
+    padding: 15px 10px 30px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -314,8 +315,8 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--footer-background);
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  padding: 0px;
   /*
         breakpoints are viewport arbitrary values,
         they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
@@ -328,7 +329,7 @@ body {
     flex-direction: row-reverse;
     align-items: flex-end;
     height: 114px;
-    padding: 10px;
+    padding: 10px 10px -10px 10px;
   }
 }
 .footer .footer__logo {
@@ -336,6 +337,7 @@ body {
   font-family: shrikhand;
   font-size: 18px;
   margin-bottom: 16px;
+  margin-right: 20px;
   padding: 20px 0px 0px 20px;
 }
 .footer .footer__link {
